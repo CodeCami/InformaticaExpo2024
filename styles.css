@@ -11,6 +11,7 @@ body {
     color: #49454f;
 }
 
+
 /* Sección Héroe */
 #hero {
     position: relative;
@@ -42,6 +43,52 @@ body {
     padding: 20px;
     z-index: 2;
 }
+
+/* Estilo del navbar */
+.navbar {
+    width: 100%; /* Ocupar todo el ancho de la ventana */
+    background-color: #001F3F; /* Fondo del navbar */
+    padding: 10px 0; /* Espacio alrededor del navbar */
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Alinea el navbar verticalmente si tiene altura */
+}
+
+/* Ajustes de la lista */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Hace que los elementos sean horizontales */
+    justify-content: center; /* Centra los enlaces */
+    align-items: center; /* Alinea verticalmente los enlaces */
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    padding: 10px; /* Espacio alrededor del texto del enlace */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Asegura que el texto dentro del enlace esté centrado */
+}
+
+.navbar ul li a:hover {
+    background-color: #575757; /* Color al hacer hover */
+    border-radius: 4px;
+}
+
+/* Asegurarse de que el navbar ocupe el espacio completo */
+.navbar ul {
+    flex-grow: 1; /* Permite que el ul crezca y ocupe espacio */
+}
+
 
 /* Sección Aprender */
 #aprender {
@@ -254,16 +301,6 @@ h2{
     margin-right: 15px;
 }
 
-.testimonial-info h4 {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-.testimonial-info .description {
-    font-size: 0.9em;
-    color: #B0BEC5;
-}
-
 .testimonial-comment {
     font-size: 1em;
     margin: 15px 0;
@@ -338,6 +375,5 @@ h2{
 @media (max-width: 480px) {
     #projects h2 { font-size: 1.5rem; }
     #footer { padding: 20px; }
-    .testimonial-info h4 { font-size: 1em; }
     .testimonial-comment { font-size: 0.9em; }
 }
