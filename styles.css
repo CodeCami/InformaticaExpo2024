@@ -324,10 +324,38 @@ h2{
     text-align: center;
     background-color: #001F3F;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#cta h2 {
-    font-size: 2.5rem;
+#cta .cta-column {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 500px; /* Ajusta el ancho máximo de cada columna si deseas limitar su tamaño */
+}
+
+#cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#cta .cta-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #001F3F;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cta img {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
 }
 
 /* Estilo base para el pie de página */
